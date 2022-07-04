@@ -1,0 +1,1 @@
+# automationqa-allure_java

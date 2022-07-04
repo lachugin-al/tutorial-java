@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "required": [
+    "manufacturers"
+  ],
+  "properties": {
+    "manufacturers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "country"
+        ],
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "models": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "averagePrice"
+              ],
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "averagePrice": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
